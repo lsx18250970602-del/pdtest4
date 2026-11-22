@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>听觉间隔 · 24题试做</title>
+<link rel="stylesheet" href="styles.css">
+<main><small>家庭可用性预实验 · v0.1</small><h1>听声音，比较间隔</h1><p>哪一段相邻“嘀”声之间隔得更久？</p><p class="muted">第一段有4声，第二段有2声。比较相邻声音的间隔，不比较整段时长。患者说答案，家属点击。</p>
+<section id="intro"><label for="pid">研究编号（可留空试做）</label><input id="pid" placeholder="例如 TEST01，不填姓名" maxlength="40"><p class="muted">调到清楚、舒适的音量。每12题休息一次。数据保存在本机，不上传。</p><button id="sample">试听教学例题</button><button id="random" class="secondary">重新随机排序</button><p id="sampleNote" class="status">教学例题播放后显示讲解，不计入24题。</p><button id="start">开始24题</button><button id="resume" hidden>继续上次</button></section>
+<section id="quiz" hidden><p id="position"></p><progress id="bar" max="24" value="0"></progress><p id="status" class="status">请播放本题。</p><button id="play">播放本题</button><button id="interrupt" class="secondary" disabled>播放中断</button><div class="answers"><button id="a1" disabled>第一段</button><button id="a2" disabled>第二段</button></div><p id="result" aria-live="polite"></p><button id="next" hidden>下一题</button><button id="export" class="secondary">导出当前记录</button></section>
+<section id="break" hidden><h2>已完成12题</h2><p>休息约1分钟，准备好后继续。</p><button id="continue">开始第二单元</button></section>
+<section id="done" hidden><h2>本次已结束</h2><p id="summary"></p><button id="download">导出完整记录</button><p class="muted">请导出并按研究团队要求保存。刷新或关闭页面前先保存记录。</p></section><p id="storage" class="muted"></p></main>
+<script src="script.js"></script></html>
